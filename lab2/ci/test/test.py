@@ -51,6 +51,8 @@ class Xv6UserTest(Test):
 
         if self.is_ok_separated():
             status = out.readline()
+            if status != "OK":
+                raise ValueError(f"Unexpected {status = }")
 
         end = datetime.now()
 

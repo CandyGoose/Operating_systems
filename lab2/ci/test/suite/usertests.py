@@ -82,26 +82,26 @@ QUICK_TESTS = [
     Xv6UserTest(name="argptest", timeout=timedelta(seconds=4)),
     Xv6UserTest(
         name="stacktest",
-        timeout=timedelta(seconds=30),
+        timeout=timedelta(seconds=4),
         suffix_size=len("usertrap(): unexpected scause 0xd pid=6561"),
         extra_lines=1,
     ),
     Xv6UserTest(
         name="nowrite",
-        timeout=timedelta(seconds=300),
+        timeout=timedelta(seconds=4),
         suffix_size=len("usertrap(): unexpected scause 0xf pid=6563"),
         extra_lines=11,
     ),
-    Xv6UserTest(name="pgbug", timeout=timedelta(seconds=40)),
+    Xv6UserTest(name="pgbug", timeout=timedelta(seconds=4)),
     Xv6UserTest(
         name="sbrkbugs",
-        timeout=timedelta(seconds=300),
+        timeout=timedelta(seconds=4),
         suffix_size=len("usertrap(): unexpected scause 0xc pid=6571"),
         extra_lines=3,
     ),
-    Xv6UserTest(name="sbrklast", timeout=timedelta(seconds=400)),
-    Xv6UserTest(name="sbrk8000", timeout=timedelta(seconds=400)),
-    Xv6UserTest(name="badarg", timeout=timedelta(seconds=500)),
+    Xv6UserTest(name="sbrklast", timeout=timedelta(seconds=4)),
+    Xv6UserTest(name="sbrk8000", timeout=timedelta(seconds=4)),
+    Xv6UserTest(name="badarg", timeout=timedelta(seconds=10)),
 ]
 
 
