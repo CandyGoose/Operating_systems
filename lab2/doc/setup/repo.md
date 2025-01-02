@@ -14,7 +14,7 @@ git clone git@github.com:secs-dev/xv6-riscv.git
 
 ## Сдача ЛР
 
-Порядок сдачи ЛР описан в документе [Порядок прохождения Code Review](https://github.com/secs-dev/os-course/blob/main/doc/code-review.md).
+Порядок сдачи ЛР описан в документе [Порядок прохождения Code Review](https://github.com/secs-dev/os-course/blob/mainlab1/doc/code-review.md).
 
 ## Поддержка
 
